@@ -13,6 +13,7 @@ defmodule ExTwitch.MixProject do
 
   def application do
     [
+      mod: {ExTwitch.Application, []},
       extra_applications: [:logger]
     ]
   end

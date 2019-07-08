@@ -16,7 +16,7 @@ export TWITCH_SECRET=<YOUR_SECRET>
 An example of querying the [`/users`](https://dev.twitch.tv/docs/api/reference/#get-users) endpoint
 
 ```
-{:ok, users} = ExTwitch.API.users(login: ["joebew42"])
+{:ok, users} = ExTwitch.API.users(login: ["malgasm"])
 ```
 
 ## Run the tests
