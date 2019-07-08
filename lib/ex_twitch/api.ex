@@ -32,12 +32,6 @@ defmodule ExTwitch.API do
 
   defp data(%Tesla.Env{body: %{"data" => data}}), do: data
 
-  defp get_value(tuples, key) do
-    tuples
-    |> Enum.find(fn({tuple_key, _value}) -> tuple_key == key end)
-    |> get_value
-  end
-
   defp to_tuples(nil, _tuple_key), do: []
   defp to_tuples(list, tuple_key), do: Enum.map(list, & {tuple_key, &1})
 
